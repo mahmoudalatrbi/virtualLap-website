@@ -1,0 +1,265 @@
+/* header section */
+
+.headerSection {
+    position: relative;
+    background-image: linear-gradient(to bottom, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
+    background-color: white;
+    z-index: -1;
+}
+
+.headerSection::before {
+    content: '';
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+    height: 28%;
+}
+
+/* Doctor's Section  */
+
+.card1 {
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+    padding: 20px 30px 20px 20px;
+    background:#272524;
+    color: #fdfcfd;
+    border-radius: 24px;
+  }
+  
+  .card1 img {
+    max-width: 280px;
+    height: 280px;
+    object-fit: cover;
+    margin-left: -60px;
+    margin-right: 30px;
+    border-radius: inherit;
+    box-shadow: 0 60px 40px rgb(0 0 0 / 8%);
+    transition: border-radius 0.3s;
+  }
+  
+  .card1 h2 {
+    font-size: 22px;
+    font-weight: 400;
+    padding-top: 8px;
+    margin-top: 0;
+    margin-right: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .card1 h3 {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    opacity: 0.75;
+  }
+  
+  .card1 p {
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    opacity: 0.5;
+  }
+  
+  /* .socials {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .socials > button {
+    position: relative;
+    border: 0;
+    background: transparent;
+    color: #f8f8f8;
+    padding: 0;
+  }
+  
+  .socials > button:first-child::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    width: 52px;
+    height: 52px;
+    translate: -50% -50%;
+    border-radius: 50%;
+    background: var(--gradient);
+    transition: 0.3s;
+    transform: translateY(0);
+  }
+  
+  .socials > button > i {
+    position: relative;
+    z-index: 1;
+    border: 4px solid var(--card);
+    background: #3f3b39;
+    display: grid;
+    place-items: center;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+  }
+   */
+  @media (width <= 600px) {
+    #Students .display-4{
+        padding-bottom:50px ;
+    }
+    .card1 {
+      margin: 0 40px;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-bottom: 60px;
+      width: 100%;
+      text-align: center;
+      flex-direction: column;
+    }
+  
+    .card1 h2 {
+      margin-right: 0;
+      font-size: 26px;
+    }
+  
+    .card1 img {
+      margin: -100px 0 30px 0;
+      width: 100%;
+      max-width: 1000px;
+      height: 250px;
+    }
+  
+    .card1 p {
+      max-width: 360px;
+    }
+  
+    .socials {
+      justify-content: center;
+    }
+  }
+  
+  @media (width <= 440px) {
+    .card1 img {
+      height: 30vw;
+      width: 30vw;
+      border-radius: 50%;
+      border: 7px solid #272524;
+      box-shadow: none;
+    }
+  }
+
+
+/* Student's Section  */
+
+.slide-content {
+    overflow: hidden;
+}
+
+.card {
+    border-radius: 25px;
+    background-color: #272524;
+}
+
+.image-content,
+.card-content {
+    flex-direction: column;
+    padding: 10px 14px;
+}
+
+.image-content {
+    position: relative;
+    row-gap: 5px;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 25px 25px 90px 90px;
+}
+
+#overlay-1 {
+    background-color: #435f7e;
+}
+
+.overlay::after {
+    border-radius: 0 0 0 0;
+    background-color: #FFF;
+}
+
+.card-image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+}
+
+.card-image .card-img {
+    object-fit: cover;
+    border: 4px solid #6b8cce;
+}
+
+.name {
+    font-size: 22px;
+    font-weight: 400;
+    color: #fdfcfd;
+}
+
+.spalization {
+    color: #fdfcfd;
+    opacity: 0.75;
+    font-size: 20px;
+}
+
+.description {
+    font-size: 17px;
+    opacity: 0.5;
+    color: #fdfcfd;
+    text-align: center;
+}
+
+
+
+
+.swiper-navBtn {
+    color: #707070;
+    transition: color 0.3s ease;
+}
+
+.swiper-navBtn:hover {
+    color: #000;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+    font-size: 35px;
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+.swiper-button-prev {
+    left: 0;
+}
+
+.swiper-pagination-bullet {
+    background-color: #707070;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #000;
+}
+
+@media screen and (max-width: 768px) {
+    .slide-content {
+        margin: 0 10px;
+    }
+
+    .swiper-navBtn {
+        display: none;
+    }
+}

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- icons css -->
+    <link href="assets/css/all.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/profile.css">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Profile</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav__header">
+            <div class="logo nav__logo px-4">
+                <a href="#" class="text-light">virtual</a>
+            </div>
+            <div class="nav_menu_btn" id="menu-btn">
+                <span><i class="fas fa-menu"></i></span>
+            </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="levels.html">Levels</a></li>
+        </ul>
+        <div class="nav__btns px-4">
+            <div class="dropdown-center">
+                <button class="border-0 rounded-circle p-0" type="button" id="dropdownBtn">
+                    <img src="assets/img/profile.jpg" class="myimage profImg img-fluid rounded-circle" alt="">
+                </button>
+                <ul class="dropdown px-4 rounded" id="dropdown">
+                    <li class="dropProf d-flex py-3 align-items-center ">
+                        <img src="assets/img/profile.jpg" class="myimage profimage img-fluid rounded-circle" alt="">
+                        <h2 class="username text-muted px-3 my-1" id="userName"> User Name</h2>
+                    </li>
+
+                    <li class="my-2 items rounded">
+                        <a class="dropdown-item d-flex justify-content-around align-items-center py-1"
+                            href="profile.html">
+                            <div class="icon py-1 px-2 text-center rounded-circle">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <span class="px-4">Edite</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </li>
+                    <li class="my-2 items rounded">
+                        <a class="dropdown-item d-flex justify-content-around align-items-center py-1" href="#">
+                            <div class="icon py-1 px-2 text-center rounded-circle"">
+                                <i class=" fas fa-cog"></i>
+                            </div>
+                            <span class="px-4">Setting</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </li>
+                    <li class="my-2 items rounded">
+                        <a class="dropdown-item d-flex justify-content-around align-items-center py-1" href="#">
+                            <div class="icon py-1 px-2 text-center rounded-circle"">
+                                <i class=" fas fa-question-circle "></i>
+                            </div>
+                            <span class=" px-4">Help</span>
+                                <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </li>
+                    <li class="my-2 items rounded">
+                        <a class="dropdown-item d-flex justify-content-around align-items-center py-1" href="#">
+                            <div class="icon py-1 px-2 text-center rounded-circle">
+                                <i class="fas fa-sign-out-alt"></i>
+                            </div>
+                            <span class="px-4">logout</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile Section -->
+    <section class="profileSection py-4">
+        <div class="container rounded px-3 ">
+            <div class="mx-3">
+                <!-- Larger Profile Picture -->
+                <div class="row d-flex align-items-center py-5">
+                    <div class="col-md-8 col-12 text-center text-md-start">
+                        <h1 class="edit-profile-title text-white" >Edit Profile</h1>
+                    </div>
+                    <div class="col-md-4 col-12 text-center p-0 profileImage">
+                        <img src="assets/img/profile.jpg" class="myimage rounded-circle" alt="Profile" id="largeProfileImage">
+                        <div class="camera text-white px-2 py-1 rounded-circle" id="cameraIcon">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <input type="file" id="fileInput" class="d-none" accept="image/*">
+                    </div>
+                </div>
+
+                <!-- Form Fields -->
+                <form id="profileForm" class="text-center text-md-start">
+                    <div class="row justify-content-around py-2">
+                        <!-- First Name -->
+                        <div
+                            class="form-group col-md-6 col-12 d-flex flex-column flex-md-row align-items-md-center mb-3">
+                            <label for="firstName" class="col-md-4 col-form-label">First Name</label>
+                            <div class="col-md-7">
+                                <input type="text" name="Firstname" class="form-control shadow-none" id="firstName"
+                                    placeholder="Mahmoud">
+                            </div>
+                        </div>
+
+                        <!-- Last Name -->
+                        <div
+                            class="form-group col-md-6 col-12 d-flex flex-column flex-md-row align-items-md-center mb-3">
+                            <label for="lastName" class="col-md-4 col-form-label">Last Name</label>
+                            <div class="col-md-7">
+                                <input type="text" name="Lastname" class="form-control shadow-none" id="lastName" placeholder="elatrbi">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-around py-2">
+                        <!-- Email -->
+                        <div
+                            class="form-group col-md-6 col-12 d-flex flex-column flex-md-row align-items-md-center mb-3">
+                            <label for="email" class="col-md-4 col-form-label">Email</label>
+                            <div class="col-md-7">
+                                <input type="email" class="form-control shadow-none" id="email" name="email"
+                                    placeholder="Me@gmail.com">
+                            </div>
+                        </div>
+
+                        <!-- Address -->
+                        <div
+                            class="form-group col-md-6 col-12 d-flex flex-column flex-md-row align-items-md-center mb-3">
+                            <label for="address" class="col-md-4 col-form-label">Address</label>
+                            <div class="col-md-7">
+                                <input type="text" class="form-control shadow-none" id="address" name="Address" placeholder="mokattam">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-around py-2">
+                        <!-- Contact Number -->
+                        <div
+                            class="form-group col-md-6 col-12 d-flex flex-column flex-md-row align-items-md-center mb-3">
+                            <label for="contact" class="col-md-4 col-form-label">Contact Number</label>
+                            <div class="col-md-7">
+                                <input type="text" name="ContactNumber" class="form-control shadow-none" id="contact"
+                                    placeholder="010*****571">
+                            </div>
+                        </div>
+
+                        <!-- Password -->
+                        <div
+                            class="form-group col-md-6 col-12 d-flex flex-column flex-md-row align-items-md-center mb-3">
+                            <label for="password" class="col-md-4 col-form-label">Password</label>
+                            <div class="col-md-7">
+                                <input type="password" class="form-control shadow-none" id="password" value="13024120">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Buttons -->
+                    <div
+                        class="form-group d-flex flex-column flex-md-row justify-content-start align-items-center py-3">
+                        <button type="clear" class="cancleBtn py-2 px-3 rounded mb-2 mb-md-0">Cancel</button>
+                        <button type="submit" class="saveBtn py-2 px-3 mx-md-3 rounded" id="updateButton">Update</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- <footer>
+        <div class="footer1">
+            <div class="waves" >
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social_icon">
+            <li><a href=""><i class="fab fa-facebook"></i></a></li>
+            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+            <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="Home"></a></li>
+            <li><a href="About"></a></li>
+            <li><a href="Services"></a></li>
+            <li><a href="Team"></a></li>
+            <li><a href="Contact"></a></li>
+
+        </ul>
+        <p>@2025 Online Tutorials | All Rights Reserved</p>
+        </div>
+        
+    </footer> -->
+
+    <!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/profile.js"></script>
+    <script src="assets/js/authenication.js"></script>
+    <script src="assets/js/profilemanage.js"></script>
+    <script src="assets/js/about.js"></script>
+
+</body>
+
+</html>
